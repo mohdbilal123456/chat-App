@@ -1,0 +1,60 @@
+.details-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.details-card {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border: 1px solid #d7e0ea;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.details-card h2 {
+  margin-bottom: 1.5rem;
+  color: #14395b;
+}
+
+/* STEP CARD */
+.step-card {
+  margin-bottom: 1.5rem;
+  border: 1px solid #e1e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* HEADER */
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f8fc;
+  padding: 10px 14px;
+}
+
+.step-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #1a365d;
+}
+
+/* COPY ICON */
+.copy-icon {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* CODE */
+.code-block {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 1rem;
+  margin: 0;
+  overflow-x: auto;
+}
