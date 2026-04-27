@@ -49,7 +49,7 @@ import cors from "cors";
 import connectDB from "./src/config/db.js";
 import userRoutes from "./src/routes/userRoutes.js";
 import questionRoutes from "./src/routes/questionRoutes.js";
-
+import path from "path";
 dotenv.config();
 
 const app = express();
@@ -88,14 +88,17 @@ app.use(
     credentials: true,
   })
 );
-
 /* ---------------- Middleware ---------------- */
 app.use(express.json());
 
 /* ---------------- Routes ---------------- */
 app.use("/api/users", userRoutes);
 app.use("/api/questions", questionRoutes);
+app.use(express.static("dist"));
 
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve("dist", "index.html"));
+});
 /* ---------------- Server Start ---------------- */
 
 const PORT = process.env.PORT || 5000;
