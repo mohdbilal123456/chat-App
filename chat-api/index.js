@@ -15,7 +15,7 @@ const app = express()
 const normalize = (url) => url?.trim().replace(/\/$/, "");
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://stirring-bublanina-ca72c9.netlify.app"
+  "https://chat-app-yod0.onrender.com"
 ]
   .map(normalize)
   .filter(Boolean);
